@@ -1,0 +1,102 @@
+.tasks {
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+}
+
+.task {
+    border: none;
+    transition: 0.2s;
+    width: 260px;
+    padding: 20px 45px;
+    font-size: 20px;
+    box-shadow: inset 0 0 5px #000;
+    border-radius: 50px;
+
+}
+
+.task:focus {
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+    outline:none
+}
+
+.submit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0px;
+    border: none;
+    font-size: 15px;
+    background-color: aqua;
+    color:#000;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px #000;
+}
+
+.submit:hover {
+    background-color: aqua;
+}
+
+.submit:active{
+    transform: scale(0.8);
+    box-shadow: 0 0 5px #000;
+}
+
+.todos {
+    
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.single{
+    display: flex;
+    width: 330px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+    
+}
+
+
+
+.single_text{
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 25px;
+    overflow:auto ;
+}
+
+.single_text{
+    outline: none;
+}
+
+.icon{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 27px;
+    border-radius: 50%;
+}
+
+.chek{
+    width: 25px;
+    height: 25px;
+}
+
+/*responsive*/
+
+@media (max-width: 800px) {
+    .tasks{
+        width: 95%;
+    }
+    .single{
+        width: 100%;
+    }
+}
